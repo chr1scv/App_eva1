@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="txtTitulo">Mi primera suma</string>
+    <string name="tilNumero1">Ingrese el número 1</string>
+    <string name="tilNumero2">Ingrese el número 2</string>
+    <string name="nombre_de_la_app">Nombre de la app</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="forgot">¿Olvidaste la contraseña?</string>
+    <string name="create">¿No tienes cuenta?</string>
+    <string name="password">contraseña</string>
+    <string name="email">correo electrónico</string>
+    <string name="welcome">Bienvenido a (Nombre de la app)</string>
+    <string name="registerme">Registrarme</string>
+    <string name="name">Nombre y apellido</string>
+    <string name="username">nombre de usuario</string>
+    <string name="tengo_cuenta">¿Ya tienes cuenta?</string>
+    <string name="mis_sensores">Mis sensores</string>
+    <string name="add">Añadir sensor</string>
+    <string name="sensor1">Sensor Cocina</string>
+    <string name="sensor2">Sensor Baño</string>
+    <string name="sensor3">Sensor Habitación</string>
+    <string name="sensor_name">Nombre del sensor</string>
+    <string name="type">Tipo de sensor</string>
+    <string name="mode">Modo de uso</string>
+    <string name="Locate">Ubicación</string>
+</resources>

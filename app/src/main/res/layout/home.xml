@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtMisSensores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mis_sensores"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+
+    <Button
+        android:id="@+id/btn_add_sensor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="148dp"
+        android:gravity="center"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMisSensores" />
+
+    <Button
+        android:id="@+id/btn_sensor_cocina"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="@string/sensor1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_sensor"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <Button
+        android:id="@+id/btn_sensor_bt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/sensor2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_sensor" />
+
+    <Button
+        android:id="@+id/btn_sensor_habitacion"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/sensor3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toEndOf="@+id/btn_sensor_bt"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sensor_cocina" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
