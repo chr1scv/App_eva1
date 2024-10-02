@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
@@ -12,8 +11,10 @@
         android:layout_height="wrap_content"
         android:text="@string/add"
         android:textSize="35sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
 
     <EditText
         android:id="@+id/edtName"
@@ -21,6 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
         android:hint="@string/sensor_name"
+        android:minHeight="48dp"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="@string/Locate"
+        android:minHeight="48dp"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edtName" />
@@ -42,6 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="@string/type"
+        android:minHeight="48dp"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edtLocate" />
@@ -52,22 +59,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="@string/mode"
+        android:minHeight="48dp"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edtType" />
-
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:backgroundTint="@color/lima"
-        android:text="@string/add"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtMode" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

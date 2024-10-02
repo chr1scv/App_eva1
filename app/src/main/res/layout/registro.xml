@@ -12,62 +12,71 @@
         android:layout_height="wrap_content"
         android:text="@string/welcome"
         android:textSize="19sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img2"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        tools:layout_editor_absoluteX="3dp" />
+
 
     <EditText
         android:id="@+id/edtName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
         android:hint="@string/name"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtWelcome" />
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
     <EditText
         android:id="@+id/edtUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:hint="@string/username"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtName" />
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
 
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="268dp"
         android:hint="@string/email"
+        android:minHeight="48dp"
+        app:layout_constraint
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtUsername" />
-
-    <EditText
-        android:id="@+id/edtPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/registerme"
-        app:layout_constraintTop_toBottomOf="@id/edtPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="@color/celeste"
-        android:textColor="@color/black"/>
+        android:text="@string/registerme"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsername" />
 
     <TextView
         android:id="@+id/txtHaveAccount"
